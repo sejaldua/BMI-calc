@@ -7,3 +7,4 @@ class InputForm(Form):
     h = FloatField(
         label='height (in)', default=0.0,
         validators=[validators.InputRequired()])
+    

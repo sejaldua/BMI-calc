@@ -1,3 +1,5 @@
+<html>
+<body>
 <form method=post action="">
 <table>
   {% for field in form %}
@@ -7,10 +9,12 @@
     </tr>
   {% endfor %}
 </table>
-<p><input type=submit value=Compute><input type="reset" value="Reset"></form></p>
+<p><input type="submit" value="Calculate"></form></p>
 
 <p>
 {% if result != None %}
 Your BMI is {{ result }}
 {% endif %}
 </p>
+</body>
+</html>

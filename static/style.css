@@ -1,0 +1,30 @@
+.main {
+	padding-left: 100px;
+	padding-right: 100px;
+	text-align: center;
+    background-color: #c9eaf5;
+}
+
+h1 {
+	text-align: center;
+}
+
+.centered-text {
+	text-align: center;
+}
+
+th, td , table {
+	width: 20%;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+	background-color: #c9f5d9;
+}
+
+
+.border {
+	border: 1px solid black;
+	border-collapse: collapse;
+}

@@ -1,13 +1,8 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, redirect, url_for
 import math
 from InputForm import InputForm
 
 app = Flask(__name__)
-
-#@app.route('/')
-#def index():
-#    return render_template('index.html')
-
 
 
 @app.route('/calculate', methods=['GET', 'POST'])
@@ -23,7 +18,7 @@ def index():
                            form=form, result=result)
 
 
-
+@app.route('/calculate/BMI')
 def calculate(weight, height):
     BMI = 703 * weight / (math.pow(height, 2))
     return str("%0.2f" %BMI)
